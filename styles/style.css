@@ -65,3 +65,48 @@ p {
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
 /* --------------------------- specific styling --------------------------- */
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
+
+/* debug purpose only - Remove ME */
+
+header,
+footer,
+article {
+  border: 1px solid red;
+}
+
+/* ----------- ----------- ----------- mobile first approach ----------- ----------- ----------- */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header-block"
+    "grow-together-block"
+    "flowing-conversations-block"
+    "your-users-block"
+    "footer-block";
+  gap: 4rem;
+
+  /* value as per style guide */
+  min-width: 37.5rem;
+}
+
+/* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
+.header-block {
+  grid-area: header-block;
+}
+
+.grow-together-block {
+  grid-area: grow-together-block;
+}
+
+.flowing-conversations-block {
+  grid-area: flowing-conversations-block;
+}
+
+.your-users-block {
+  grid-area: your-users-block;
+}
+
+.footer-block {
+  grid-area: footer-block;
+}
