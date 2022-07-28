@@ -68,7 +68,6 @@ p {
 
 /* debug purpose only - Remove ME */
 
-header,
 footer {
   border: 1px solid red;
 }
@@ -90,6 +89,80 @@ footer {
   /* value as per style guide */
   min-width: 37.5rem;
 }
+
+/* style 1st component - mobile */
+
+.header-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "header-block__company-logo header-block__trial-button"
+    "header-block__product-title header-block__product-title"
+    "header-block__product-info header-block__product-info"
+    "header-block__product-trial-button header-block__product-trial-button"
+    "header-block__product-illustration header-block__product-illustration";
+  gap: 4rem;
+  align-items: center;
+
+  padding: 2rem;
+
+  background-color: var(--clr-neutral-very-pale-cyan);
+  background-image: url("../images/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -10rem;
+}
+
+.header-block__company-logo {
+  width: 70%;
+}
+
+.header-block__trial-button {
+  width: 75%;
+  background-color: white;
+
+  border: none;
+  border-radius: 2rem;
+
+  font-size: 1.2rem;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-700);
+
+  justify-self: end;
+
+  padding: 0.6rem 0;
+}
+
+.header-block__product-title {
+  font-size: 2.6rem;
+  text-align: center;
+
+  margin-top: 6rem;
+}
+
+.header-block__product-info {
+  font-family: var(--ff-primary);
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-block__product-trial-button {
+  width: 70%;
+  margin: 0 auto;
+
+  font-size: 1.2rem;
+  font-family: var(--ff-primary);
+
+  padding: 1.2rem 0;
+
+  border: none;
+  border-radius: 2.5rem;
+
+  background: var(--clr-primary-pink);
+  color: var(--clr-neutral-very-pale-cyan);
+}
+
+/* style 2nd, 3rd & 4th component - mobile */
 
 .grow-together-block,
 .flowing-conversations-block,
@@ -157,6 +230,30 @@ footer {
 /* component 1 */
 .header-block {
   grid-area: header-block;
+}
+
+.header-block__company-logo {
+  grid-area: header-block__company-logo;
+}
+
+.header-block__trial-button {
+  grid-area: header-block__trial-button;
+}
+
+.header-block__product-title {
+  grid-area: header-block__product-title;
+}
+
+.header-block__product-info {
+  grid-area: header-block__product-info;
+}
+
+.header-block__product-trial-button {
+  grid-area: header-block__product-trial-button;
+}
+
+.header-block__product-illustration {
+  grid-area: header-block__product-illustration;
 }
 
 /* component 2 */
