@@ -338,8 +338,8 @@ p {
   margin-bottom: 4rem;
 }
 
-.footer-block__social-icons-block{
-    margin-bottom: 1.5rem;
+.footer-block__social-icons-block {
+  margin-bottom: 1.5rem;
 }
 
 .footer-block__social-icons-block > ul > li {
@@ -376,6 +376,123 @@ p {
   font-family: var(--ff-primary);
   font-size: 1.2rem;
 }
+
+/* ----------- ----------- ----------- desktop second approach ----------- ----------- ----------- */
+
+@media screen and (min-width: 48rem) {
+  /*  desktop - component 1 styling  */
+
+  .header-block {
+    grid-template-columns: 0.75fr 1.25fr;
+    grid-template-areas:
+      "header-block__company-logo header-block__trial-button"
+      "header-block__product-title header-block__product-illustration"
+      "header-block__product-info header-block__product-illustration"
+      "header-block__product-trial-button header-block__product-illustration";
+
+    padding: 8rem 10rem;
+  }
+
+  .header-block__company-logo {
+    width: 30%;
+  }
+
+  .header-block__trial-button {
+    width: 20%;
+    padding: 1rem 0;
+  }
+
+  .header-block__product-title {
+    text-align: start;
+    font-size: 3.5rem;
+  }
+
+  .header-block__product-info {
+    text-align: start;
+    width: 100%;
+  }
+
+  .header-block__product-trial-button {
+    margin: 0;
+    width: 55%;
+  }
+
+  .header-block__product-illustration {
+    width: 90%;
+    justify-self: end;
+  }
+
+  /*  desktop - component 2, 3, 4 styling  */
+
+  .grow-together-block,
+  .your-users-block,
+  .flowing-conversations-block {
+    /* as per design set new values for padding, gap */
+
+    width: 82%;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem 16rem;
+
+    padding: 4rem 2rem 4rem 12rem;
+  }
+
+  .grow-together-block {
+    grid-template-areas:
+      "grow-together-block__feature-title grow-together-block__feature-image"
+      "grow-together-block__feature-info grow-together-block__feature-image";
+  }
+
+  .flowing-conversations-block {
+    grid-template-areas:
+      "flowing-conversations-block__feature-image flowing-conversations-block__feature-title"
+      "flowing-conversations-block__feature-image flowing-conversations-block__feature-info";
+  }
+
+  .your-users-block {
+    grid-template-areas:
+      "your-users-block__feature-title your-users-block__feature-image"
+      "your-users-block__feature-info your-users-block__feature-image";
+  }
+
+  .grow-together-block__feature-title,
+  .your-users-block__feature-title,
+  .flowing-conversations-block__feature-title {
+    text-align: start;
+    align-self: flex-end;
+    justify-self: start;
+  }
+
+  .grow-together-block__feature-info,
+  .your-users-block__feature-info,
+  .flowing-conversations-block__feature-info {
+    text-align: start;
+    justify-self: start;
+  }
+
+  .grow-together-block__feature-image,
+  .your-users-block__feature-image,
+  .flowing-conversations-block__feature-image {
+    /* reset values from mobile styling */
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  /*  desktop - component 5 styling  */
+
+  .footer-block {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "footer-block__trial-info footer-block__trial-info footer-block__trial-info footer-block__trial-info"
+      "footer-block__company-logo . . ."
+      "footer-block__location-details footer-block__about-us footer-block__career footer-block__social-icons-block"
+      "footer-block__location-details footer-block__what-we-do footer-block__blog ."
+      "footer-block__phone-details footer-block__faq footer-block__contact-us ."
+      "footer-block__email-details . . . "
+      ". . . footer-block__copyright";
+  }
+}
+
 /* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
 
 /* component 1 */
