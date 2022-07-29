@@ -171,7 +171,7 @@ p {
 
   padding: 2rem;
 
-  box-shadow: 0 0 4px var(--clr-neutral-grayish-blue);
+  box-shadow: 0 0 0.4rem var(--clr-neutral-grayish-blue);
   border-radius: 2rem;
 }
 
@@ -389,22 +389,32 @@ p {
       "header-block__product-title header-block__product-illustration"
       "header-block__product-info header-block__product-illustration"
       "header-block__product-trial-button header-block__product-illustration";
+    grid-template-rows: 9rem 21rem 8rem auto;
+    gap: 3rem 2rem;
 
-    padding: 8rem 10rem;
+    padding: 4rem 10rem 8rem 10rem;
+
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-position: 0;
   }
 
   .header-block__company-logo {
-    width: 30%;
+    width: 35%;
   }
 
   .header-block__trial-button {
-    width: 20%;
-    padding: 1rem 0;
+    width: 25%;
+    padding: 1.4rem 0;
+    margin-right: 4rem;
+
+    box-shadow: 0 0 0.4rem var(--clr-neutral-grayish-blue);
   }
 
   .header-block__product-title {
     text-align: start;
     font-size: 3.5rem;
+    margin: 0;
+    align-self: flex-end;
   }
 
   .header-block__product-info {
@@ -415,11 +425,13 @@ p {
   .header-block__product-trial-button {
     margin: 0;
     width: 55%;
+    align-self: flex-start;
+    padding: 1.6rem;
   }
 
   .header-block__product-illustration {
     width: 90%;
-    justify-self: end;
+    justify-self: center;
   }
 
   /*  desktop - component 2, 3, 4 styling  */
@@ -490,7 +502,7 @@ p {
       "footer-block__phone-details footer-block__faq footer-block__contact-us ."
       "footer-block__email-details . . . "
       ". . . footer-block__copyright";
-    grid-template-rows: auto auto 35px 35px 35px auto auto;
+    grid-template-rows: auto auto 3.5rem 3.5rem 3.5rem auto auto;
     gap: 1rem 12rem;
 
     padding: 0 10rem 6rem 10rem;
