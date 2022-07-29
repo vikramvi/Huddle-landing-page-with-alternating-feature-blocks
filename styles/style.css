@@ -481,7 +481,7 @@ p {
   /*  desktop - component 5 styling  */
 
   .footer-block {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1.8fr 0.5fr 0.5fr 1.2fr;
     grid-template-areas:
       "footer-block__trial-info footer-block__trial-info footer-block__trial-info footer-block__trial-info"
       "footer-block__company-logo . . ."
@@ -490,6 +490,46 @@ p {
       "footer-block__phone-details footer-block__faq footer-block__contact-us ."
       "footer-block__email-details . . . "
       ". . . footer-block__copyright";
+    grid-template-rows: auto auto 35px 35px 35px auto auto;
+    gap: 1rem 12rem;
+
+    padding: 0 10rem 6rem 10rem;
+  }
+
+  .footer-block__trial-info {
+    width: 65%;
+    margin: 0 auto 8rem auto;
+    padding: 6rem 0;
+  }
+
+  .footer-block-trial-info__title {
+    font-size: 3rem;
+  }
+
+  .footer-block-trial-info__button {
+    width: 45%;
+    padding: 2.5rem 0;
+    font-size: 1.6rem;
+    border-radius: 5rem;
+    font-family: var(--ff-secondary);
+  }
+
+  .footer-block__company-logo {
+    margin-bottom: 2.5rem;
+  }
+
+  .footer-block__about-us,
+  .footer-block__contact-us,
+  .footer-block__phone-details,
+  .footer-block__email-details {
+    /* reset margin from mobile layout */
+    margin: 0;
+  }
+
+  .footer-block__social-icons-block {
+    justify-self: start;
+    /* reset margin from mobile layout */
+    margin: 0;
   }
 }
 
