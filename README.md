@@ -38,3 +38,53 @@ Users should be able to:
 ### Links
 
 - [Live Website](https://vikramvi.github.io/Huddle-landing-page-with-alternating-feature-blocks/)
+
+## My process
+
+### Built with
+
+- Grit, Love, Passion & Commitment
+- Semantic + Accessible HTML5 markup
+- BEM
+- Mobile-first workflow
+- CSS Grid
+- Chrome and FF Dev Tools
+- Googling
+
+### What I learned
+
+- It helps to break down big problem into smallest possible and start solving those small problems one by one
+  - ".. You just begin. You do the math. You solve one problem... and you solve the next one... and then the next. And If you solve enough problems, you get to come home. ..."
+- Improving Googling techniques
+- Better dev tool usage on both FF and Chrome
+  - Better debugging
+  - Different problem solving techniques
+- Practice improves execution speed
+  - One can increase patience with programming and solving new challenges each day
+
+### Continued development
+
+- Learn more about better practices wrt below
+  - SEO and Accessibility practices
+  - BEM
+  - Responsive Web Design optimum techniques
+  - Grid, Flexbox optimizations
+  - width, max-width, min-width good practices
+  - padding, margin good practices
+
+### Useful resources
+
+- Google
+- Stackoverflow
+- Frontend Mentor slack community + website
+- YT videos
+
+## Author
+
+- Frontend Mentor - [@vikramvi](https://www.frontendmentor.io/profile/vikramvi)
+
+## Acknowledgments
+
+- Google + SO community
+- YT content creators
+- Frontend Mentor slack community
