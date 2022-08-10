@@ -235,7 +235,7 @@ p {
     "footer-block__career"
     "footer-block__blog"
     "footer-block__contact-us"
-    "footer-block__social-icons-block"
+    "footer-block-social-component"
     "footer-block__copyright";
   gap: 1.5rem;
 
@@ -338,34 +338,43 @@ p {
   margin-bottom: 4rem;
 }
 
-.footer-block__social-icons-block {
+.footer-block-social-component {
   margin-bottom: 1.5rem;
+  justify-self: center;
 }
 
-.footer-block__social-icons-block > ul > li {
-  list-style-type: none;
+.footer-block-social-component {
+  display: grid;
+  grid-template-columns: repeat(3, 3.5rem);
+  grid-template-areas: "footer-block-social-component__fb-icon footer-block-social-component__twitter-icon footer-block-social-component__instagram-icon";
 }
 
-.footer-block__social-icons-block > ul {
+.footer-block-social-component__fb-icon,
+.footer-block-social-component__twitter-icon,
+.footer-block-social-component__instagram-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+
   display: flex;
-  gap: 2.4rem;
-  justify-content: center;
-}
-
-.footer-block__social-icons-block > ul > li {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  align-content: center;
+  justify-content: center;
 
-  width: 35px;
-  height: 35px;
+  border: 0.1rem solid white;
+  border-radius: 50%;
+}
 
-  background-color: var(--clr-very-dark-blue);
+.footer-block-social-component__fb-icon > img {
+  width: 35%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+}
 
-  border-radius: 50px;
-  border: 0.12rem solid white;
-
-  color: white;
+.footer-block-social-component__twitter-icon > img,
+.footer-block-social-component__instagram-icon > img {
+  width: 50%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
 }
 
 .footer-block__copyright {
@@ -497,7 +506,7 @@ p {
     grid-template-areas:
       "footer-block__trial-info footer-block__trial-info footer-block__trial-info footer-block__trial-info"
       "footer-block__company-logo . . ."
-      "footer-block__location-details footer-block__about-us footer-block__career footer-block__social-icons-block"
+      "footer-block__location-details footer-block__about-us footer-block__career footer-block-social-component"
       "footer-block__location-details footer-block__what-we-do footer-block__blog ."
       "footer-block__phone-details footer-block__faq footer-block__contact-us ."
       "footer-block__email-details . . . "
@@ -538,7 +547,7 @@ p {
     margin: 0;
   }
 
-  .footer-block__social-icons-block {
+  .footer-block-social-component {
     justify-self: start;
     /* reset margin from mobile layout */
     margin: 0;
@@ -708,10 +717,22 @@ p {
   grid-area: footer-block__contact-us;
 }
 
-.footer-block__social-icons-block {
-  grid-area: footer-block__social-icons-block;
-}
-
 .footer-block__copyright {
   grid-area: footer-block__copyright;
+}
+
+.footer-block-social-component {
+  grid-area: footer-block-social-component;
+}
+
+.footer-block-social-component__fb-icon {
+  grid-area: footer-block-social-component__fb-icon;
+}
+
+.footer-block-social-component__twitter-icon {
+  grid-area: footer-block-social-component__twitter-icon;
+}
+
+.footer-block-social-component__instagram-icon {
+  grid-area: footer-block-social-component__instagram-icon;
 }
